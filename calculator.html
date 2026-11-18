@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>EMI Calculator – Business, Home &amp; Mortgage Loans | Simple Funds</title>
+  <meta name="description" content="Calculate your monthly EMI, total interest, and repayment schedule for Business Loans, Home Loans, Loan Against Property, and Mortgage Loans. Call +91 8618207185.">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="sf-preloader" id="preloader" aria-label="Loading Simple Funds">
+    <div class="sf-preloader-box">
+      <div class="sf-preloader-ring-wrap">
+        <div class="sf-preloader-ring"></div>
+        <img src="assets/logo.png" alt="Simple Funds Logo" class="sf-preloader-logo">
+      </div>
+      <div class="sf-preloader-brand">Simple <span>Funds</span></div>
+      <div class="sf-preloader-sub">Loan EMI Calculator</div>
+    </div>
+  </div>
+
+  <!-- HEADER & NAVIGATION (No Login/Register) -->
+  <header>
+    <nav class="navbar navbar-expand-xl qf-nav fixed-top" aria-label="Main">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="assets/logo.png" alt="Simple Funds Logo" class="brand-logo-img" width="40" height="40">
+          <span class="wm">Simple <span class="b2">Funds</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+          aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="tg"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-xl-0" id="menu">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="business-loan.html">
+                <i class="fa-solid fa-briefcase"></i> Business Loan
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="home-loan.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-house-chimney"></i> Home Loans
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="home-loan.html"><i class="fa-solid fa-house-chimney"></i> Home Loan Overview</a></li>
+                <li><a class="dropdown-item" href="loan-against-property.html"><i class="fa-solid fa-landmark"></i> Loan Against Property</a></li>
+                <li><a class="dropdown-item" href="mortgage-loan.html"><i class="fa-solid fa-file-contract"></i> Mortgage Loan</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="calculator.html">
+                <i class="fa-solid fa-calculator"></i> Calculator
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="how-it-works.html">
+                <i class="fa-solid fa-list-check"></i> How It Works
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CALCULATOR VIEW -->
+  <main id="main">
+    <!-- SECTION 1: DEDICATED CALCULATOR HERO PICTURE BANNER -->
+    <section class="loan-hero-banner" style="background-image: url('assets/page-calculator.jpg')">
+      <div class="loan-hero-overlay"></div>
+      <div class="container loan-hero-container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right crumb-sep"></i>
+          <span>EMI Calculator</span>
+        </nav>
+        <div class="d-flex align-items-center gap-3 mt-3">
+          <span class="ico3d loan-hero-icon"><i class="fa-solid fa-calculator"></i></span>
+          <h1 class="loan-hero-title">Interactive Loan EMI Calculator</h1>
+        </div>
+        <p class="lead loan-hero-lead">Plan your Business Loan, Home Loan, Loan Against Property, or Mortgage Loan repayment accurately. Adjust loan amount, interest rate, and tenure below.</p>
+        <div>
+          <a href="tel:8618207185" class="hero-phone-pill"><i class="fa-solid fa-phone-volume"></i> Free EMI Consultation: +91 8618207185</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: LIVE EMI CALCULATOR -->
+    <section class="py-section sec-white sec-relative" id="calculator">
+      <div class="container position-relative" style="z-index: 1;">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <h2>Calculate your monthly EMI</h2>
+            <p class="sub">Select a preset loan type or move the sliders to see your exact monthly instalment, total interest payable, and overall loan cost.</p>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <button type="button" class="btn btn-sm btn-3d active" data-calc-preset data-amt="1500000" data-rate="10.75" data-ten="5">Business Loan (10.75%)</button>
+              <button type="button" class="btn btn-sm btn-3d btn-alt" data-calc-preset data-amt="3500000" data-rate="8.75" data-ten="15">Loan Against Property (8.75%)</button>
+              <button type="button" class="btn btn-sm btn-3d" data-calc-preset data-amt="5000000" data-rate="9.00" data-ten="20">Mortgage Loan (9.00%)</button>
+            </div>
+            <ul class="ticks">
+              <li><i class="fa-solid fa-circle-check"></i> Instant calculation for amounts up to ₹5 Crore.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Compare rates from our 9 verified lending partners.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Speak with an advisor at <strong>+91 8618207185</strong> for customized sanction quotes.</li>
+            </ul>
+          </div>
+          <div class="col-lg-7">
+            <div class="calc tilt" aria-label="EMI calculator">
+              <label for="amt">Loan amount <output id="amtO"></output></label>
+              <input id="amt" class="form-range" type="range" min="100000" max="50000000" step="100000" value="2500000">
+              <label for="rate">Interest rate a year <output id="rateO"></output></label>
+              <input id="rate" class="form-range" type="range" min="7" max="28" step="0.25" value="9">
+              <label for="ten">Tenure <output id="tenO"></output></label>
+              <input id="ten" class="form-range" type="range" min="1" max="30" step="1" value="10">
+              <div class="emi" aria-live="polite"><small>Monthly EMI</small><strong id="emi-v"></strong>
+                <dl>
+                  <div>
+                    <dt>Total interest</dt>
+                    <dd id="int"></dd>
+                  </div>
+                  <div>
+                    <dt>Total payable</dt>
+                    <dd id="tot"></dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="mt-4 d-flex flex-wrap gap-3">
+                <button type="button" class="btn btn-3d flex-grow-1" data-apply>Apply for this Loan Amount</button>
+                <a href="tel:8618207185" class="btn btn-3d btn-alt"><i class="fa-solid fa-phone me-1"></i> Call 8618207185</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PARTNER RATE REFERENCE -->
+    <section class="py-section sec-purple sec-relative">
+      <div class="container position-relative" style="z-index: 1;">
+        <h2>Starting Interest Rates by Partner</h2>
+        <p class="sub">Use these verified partner starting rates in the calculator above.</p>
+        <div class="partners-logo-grid">
+          <a href="business-loan.html" class="partner-logo-card tilt">
+            <img src="assets/lenders/lendingkart.svg" alt="Lendingkart Finance">
+            <span>Lendingkart (From 13.50%)</span>
+          </a>
+          <a href="business-loan.html" class="partner-logo-card tilt">
+            <img src="assets/lenders/axis-bank.svg" alt="Axis Bank Business Loan">
+            <span>Axis Bank (From 10.75%)</span>
+          </a>
+          <a href="loan-against-property.html" class="partner-logo-card tilt">
+            <img src="assets/lenders/icici-hfc.svg" alt="ICICI HFC">
+            <span>ICICI HFC (From 9.00%)</span>
+          </a>
+          <a href="loan-against-property.html" class="partner-logo-card tilt">
+            <img src="assets/lenders/tata-capital.svg" alt="Tata Capital">
+            <span>Tata Capital (From 9.00%)</span>
+          </a>
+          <a href="loan-against-property.html" class="partner-logo-card tilt">
+            <img src="assets/lenders/aditya-birla.svg" alt="Aditya Birla">
+            <span>Aditya Birla (From 8.75%)</span>
+          </a>
+          <a href="loan-against-property.html" class="partner-logo-card tilt">
+            <img src="assets/lenders/capri-loans.svg" alt="Capri Loans">
+            <span>Capri Loans (From 9.50%)</span>
+          </a>
+          <a href="loan-against-property.html" class="partner-logo-card tilt">
+            <img src="assets/lenders/chola.svg" alt="Cholamandalam Finance">
+            <span>Chola Finance (From 9.25%)</span>
+          </a>
+          <a href="loan-against-property.html" class="partner-logo-card tilt">
+            <img src="assets/lenders/pnb.svg" alt="PNB Housing Finance">
+            <span>PNB (From 9.00%)</span>
+          </a>
+          <a href="loan-against-property.html" class="partner-logo-card tilt">
+            <img src="assets/lenders/iifl.svg" alt="IIFL Finance">
+            <span>IIFL (From 9.25%)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="qf-foot sec-purple-foot">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <img src="assets/logo.png" alt="Simple Funds Logo" class="brand-logo-img" width="40" height="40">
+            <span class="wm">Simple <span class="b2">Funds</span></span>
+          </a>
+          <p class="mt-3">Simple Funds provides unbiased comparison of Business Loans, Home Loans, Loan Against Property, and Mortgage Loans from India's leading financial institutions.</p>
+          <p class="mb-1"><i class="fa-solid fa-phone me-2"></i> <a href="tel:8618207185" class="text-decoration-none fw-bold">+91 8618207185</a></p>
+          <p class="mb-0"><i class="fa-solid fa-location-dot me-2"></i> Bangalore, Karnataka, India</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3>Loans</h3>
+          <ul class="list-unstyled">
+            <li><a href="business-loan.html">Business Loan</a></li>
+            <li><a href="home-loan.html">Home Loan</a></li>
+            <li><a href="loan-against-property.html">Loan Against Property</a></li>
+            <li><a href="mortgage-loan.html">Mortgage Loan</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3>Resources</h3>
+          <ul class="list-unstyled">
+            <li><a href="calculator.html">EMI Calculator</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="index.html#partners">Lending Partners</a></li>
+            <li><a href="index.html#faq">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3>Support</h3>
+          <ul class="list-unstyled">
+            <li><a href="tel:8618207185">Call: 8618207185</a></li>
+            <li><button class="linkbtn" type="button" data-apply>Request Callback</button></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3>Contact</h3>
+          <p class="mb-1"><strong>Helpline:</strong> <a href="tel:8618207185">+91 8618207185</a></p>
+          <p class="mb-0"><strong>Address:</strong> Bangalore, Karnataka, India</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="small mb-0">© <span id="yr">2026</span> Simple Funds. All rights reserved. Helpline: +91 8618207185.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Sticky Call Button (Just Call Now) -->
+  <a href="tel:8618207185" class="floating-call-btn" aria-label="Call Now" id="stickyCallBtn">
+    <i class="fa-solid fa-phone"></i>
+    <span>Call Now</span>
+  </a>
+
+  <!-- Sticky Bottom Navigation Bar (Home, Business Loan, Home Loan, Call Now) -->
+  <nav class="sticky-bottom-bar" aria-label="Bottom Navigation">
+    <div class="container">
+      <a href="index.html" class="bottom-tab" id="tabHome">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="business-loan.html" class="bottom-tab" id="tabBusiness">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Business Loan</span>
+      </a>
+      <a href="home-loan.html" class="bottom-tab" id="tabHomeLoan">
+        <i class="fa-solid fa-house-chimney"></i>
+        <span>Home Loan</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Apply Modal -->
+  <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="applyTitle">Apply / Get a Call Back</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="form" class="modal-body row g-3">
+          <div class="col-12">
+            <div class="p-2 rounded bg-light border d-flex align-items-center justify-content-between">
+              <span class="small fw-semibold">Direct Helpline:</span>
+              <a href="tel:8618207185" class="fw-bold text-decoration-none"><i class="fa-solid fa-phone me-1"></i> +91 8618207185</a>
+            </div>
+          </div>
+          <div class="col-md-6"><label class="form-label" for="f-name">Full name</label><input id="f-name" name="name" class="form-control" required autocomplete="name"></div>
+          <div class="col-md-6"><label class="form-label" for="f-phone">Mobile number</label><input id="f-phone" name="phone" class="form-control" required inputmode="tel" pattern="[0-9+ ]{10,14}" autocomplete="tel"></div>
+          <div class="col-md-6">
+            <label class="form-label" for="f-type">Loan type</label>
+            <select id="f-type" name="type" class="form-select">
+              <option value="Business Loan">Business Loan</option>
+              <option value="Home Loan">Home Loan</option>
+              <option value="Loan Against Property">Loan Against Property</option>
+              <option value="Mortgage Loan">Mortgage Loan</option>
+            </select>
+          </div>
+          <div class="col-md-6"><label class="form-label" for="f-lender">Preferred lender</label><input id="f-lender" name="lender" class="form-control"></div>
+          <div class="col-md-6"><label class="form-label" for="f-amt">Amount needed (₹)</label><input id="f-amt" name="amount" class="form-control" required inputmode="numeric"></div>
+          <div class="col-md-6"><label class="form-label" for="f-city">City</label><input id="f-city" name="city" class="form-control" autocomplete="address-level2"></div>
+          <div class="col-12"><button class="btn btn-3d w-100" type="submit">Submit Application Request</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
