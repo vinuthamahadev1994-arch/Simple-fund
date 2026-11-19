@@ -77,7 +77,7 @@
     ["Which lending partners are available on Simple Funds?", "For Business Loans, we partner with Lendingkart Finance and Axis Bank Business Loan. For Home Loans (Loan Against Property and Mortgage Loans), we partner with ICICI HFC, Tata Capital, Aditya Birla Housing Finance, Capri Loans, Cholamandalam Finance, PNB Housing Finance, and IIFL Home Finance."],
     ["What is the difference between Loan Against Property and Mortgage Loan?", "Both are secured by residential or commercial property you own. Loan Against Property (LAP) lets you unlock up to 70% of your property's market value for business expansion or personal goals, while Mortgage Loans provide structured long-term property-backed funding."],
     ["Can I get a business loan without collateral?", "Yes! Our partners Lendingkart Finance and Axis Bank Business Loan offer unsecured collateral-free business loans based on your GST returns, business vintage, and bank statements."],
-    ["How can I speak directly with a loan advisor?", "You can call our dedicated helpline anytime at +91 8618207185 or click the 'Call Now' button at the bottom of the screen for instant assistance."],
+    ["How can I speak directly with a loan advisor?", "You can call our dedicated helpline anytime at +91 8618207185 or click the WhatsApp button at the bottom of the screen for instant assistance."],
     ["Are the interest rates shown on Simple Funds final?", "They are current indicative starting rates from our lending partners. Your final approved rate depends on your credit score, income, property valuation, and lender policy."]
   ];
 
@@ -91,7 +91,7 @@
     privacy: ["Privacy policy", [
       "We collect details you submit in an enquiry, such as your name, mobile number, city, required loan amount, and loan type.",
       "We use this information solely to connect you with suitable lending partners and financial advisors at Simple Funds. We never sell your personal data to third parties.",
-      "For any privacy queries or data removal requests, call us at +91 8618207185 or visit our office in Bangalore, Karnataka, India."
+      "For any privacy queries or data removal requests, call us at +91 8618207185 or visit our office at No.745, 10th Main, 3rd Block, 3rd Stage, Basaveshwara Nagar, Bengaluru, Karnataka, India – 560079."
     ]],
     disclaimer: ["Disclaimer", [
       "Simple Funds is a comparison and facilitation portal and not a direct bank or NBFC. Nothing on this website constitutes a binding offer to lend money.",
@@ -101,7 +101,7 @@
       "We use essential cookies to ensure smooth website navigation and calculator functionality."
     ]],
     grievance: ["Grievance redressal", [
-      "For queries or complaints regarding Simple Funds services, contact our Grievance Officer at +91 8618207185 (Bangalore, Karnataka, India). We acknowledge all grievances within 48 hours."
+      "For queries or complaints regarding Simple Funds services, contact our Grievance Officer at +91 8618207185 (No.745, 10th Main, 3rd Block, 3rd Stage, Basaveshwara Nagar, Bengaluru, Karnataka, India – 560079). We acknowledge all grievances within 48 hours."
     ]],
     fair: ["Fair practices", [
       "We present rates objectively from our verified partners and never charge borrowers comparison fees."
